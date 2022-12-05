@@ -3,7 +3,7 @@
 }
 
 .first-class {
-    color: red;
+    color: rgb(165, 110, 110);
 }
 
 .second-class {
@@ -11,7 +11,7 @@
 }
 
 p.first-class.second-class {
-    text-decoration: underline;
+    text-decoration: dashed;
 }
 
 .container p {
@@ -19,7 +19,7 @@ p.first-class.second-class {
 }
 
 #third-p {
-    color: violet !important;
+    color: rgb(181, 90, 181) !important;
 }
 
 input {
