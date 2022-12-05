@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>title</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        #second-p {
+            color: green;
+        }
+
+        .first-class {
+            color: red;
+        }
+
+        .second-class {
+            font-size: 24px;
+        }
+
+        p.first-class.second-class {
+            text-decoration: underline;
+        }
+
+        .container p {
+            margin-left: 20px;
+        }
+
+        #third-p {
+            color: violet !important;
+        }
+
+        input {
+            transition-property: opacity;
+            transition-duration: 1s;
+        }
+
+        input:focus {
+            line-height: 3rem;
+        }
+
+        input:hover {
+            opacity: 0;
+        }
+
+        li:nth-child(2n + 1) {
+            color: brown;
+        }
+
+        /* li::before {
+            content: "li ";
+        } */
+
+        li:nth-child(2n + 1)::marker {
+            content: "🦭 ";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="first-class second-class">One</p>
+        <p id="second-p" class="first-class">Two</p>
+        <p style="font-size: 36px; color: brown;" id="third-p" class="second-class">Three</p>
+    </div>
+
+    <input type="text" />
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+
+</body>
+
+</html>
